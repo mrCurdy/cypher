@@ -14,6 +14,7 @@ func main() {
 	if toEncrypt {
 		if encoding == "1" {
 			fmt.Println("Encrypted message using Rot13:")
+
 			fmt.Println(rot13.Encrypt_rot13(message))
 		} else if encoding == "2" {
 			fmt.Println("Encrypted message using Reverse:")
@@ -33,6 +34,7 @@ func main() {
 			fmt.Println("Decrypted message using Third custom Cypher:")
 			fmt.Println(thirdcypher.Decrypt_thirdcypher(message))
 		}
+
 	}
 
 }
