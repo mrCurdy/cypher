@@ -2,13 +2,13 @@ package reverse
 
 func Encrypt_reverse(s string) string {
 	reversedRunes := make([]rune, len(s))
-	
+
 	for i, r := range s {
 		reversedRunes[len(s)-1-i] = reverseAlphabetValue(r)
 	}
-	
+
 	return string(reversedRunes)
-	
+
 }
 func reverseAlphabetValue(ch rune) rune {
 	var reverse rune
@@ -19,6 +19,9 @@ func reverseAlphabetValue(ch rune) rune {
 	} else {
 		return ch
 	}
-	
+
 	return reverse
+
+}
+
 // func encrypt_reverse(s string) string {}

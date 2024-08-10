@@ -1,4 +1,5 @@
 package main
+<<<<<<< Updated upstream
 import (
 	"cypher/reverse"
 
@@ -6,5 +7,4 @@ import (
 )
 func main() {
  	a := reverse.Encrypt_reverse("Abc, Marian")
-	fmt.Println(a)
 }
