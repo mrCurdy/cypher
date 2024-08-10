@@ -1,11 +1,13 @@
 package input
 
+import "fmt"
+
 func TrimSpaces(message string) string {
 	res := ""
-	// if len(message) == 0 {
-	// 	fmt.Println("empty")
-	// 	return ""
-	// }
+	if len(message) == 0 || message == " " {
+		fmt.Println("Your message is empty. Try again. I'm trim")
+		return ""
+	}
 	for message[0] == ' ' {
 		message = message[1:]
 	}
