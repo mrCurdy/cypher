@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func getInput() (toEncrypt bool, encoding string, message string) {
+func GetInput() (toEncrypt bool, encoding string, message string) {
 	correctInputs := false
 	for correctInputs {
 		var i int
