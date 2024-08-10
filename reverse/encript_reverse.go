@@ -20,5 +20,6 @@ func reverseAlphabetValue(ch rune) rune {
 		return ch
 	}
 	
-	return reverse
+	return reverse 
+}
 // func encrypt_reverse(s string) string {}
