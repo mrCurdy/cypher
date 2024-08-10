@@ -34,6 +34,8 @@ Output: Svool Dliow!
 Run the code:
 Follow the on-screen promts:
 First you will be greeted by the tool. 
+
+//add inser number
 Select whether you want to encrypt or decrypt the message.
 Select between ROT13 or Reverse Alphabet encryption/decryption techniques.
 

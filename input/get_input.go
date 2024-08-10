@@ -5,6 +5,7 @@ import (
 )
 
 func GetInput() (toEncrypt bool, encoding string, message string) {
+
 	falseInputs := true
 	for falseInputs {
 		var i int
