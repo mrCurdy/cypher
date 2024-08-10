@@ -5,6 +5,6 @@ import (
 	"fmt"
 )
 func main() {
- 	a := reverse.Encrypt_reverse("Abc, Marian")
+ 	a := reverse.Decrypt_reverse("Abc, Marian")
 	fmt.Println(a)
 }
