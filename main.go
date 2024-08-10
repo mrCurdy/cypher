@@ -1,7 +1,9 @@
 package main
+import (
+	"cypher/reverse"
 
+	"fmt"
+)
 func main() {
-
-	// we can add this ti git ignore
 
 }
