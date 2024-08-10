@@ -13,6 +13,7 @@ func GetInput() (toEncrypt bool, encoding string, message string) {
 	wrongChoiceSign := "\nWrong selection. Please try again."
 	cypherSelectMenu := "\nSelect cypher (1/3):\n1. ROT13.\n2. Reverse.\n3. Reverse message and shift"
 	entMessageSign := "Enter the message:"
+	wrongMessageSign := "Message is empty. Try again"
 
 	fmt.Println(welcomeSign)
 
@@ -40,12 +41,15 @@ func GetInput() (toEncrypt bool, encoding string, message string) {
 				fmt.Println(entMessageSign)
 				message = Scanner()
 				fmt.Println()
-				falseInputs = false
 
+			} else if len(message) == 0 || message == " " {
+				fmt.Println(welcomeSign)
+				continue
 			} else {
-				fmt.Println(wrongChoiceSign)
+				fmt.Println(wrongMessageSign)
 				continue
 			}
+			falseInputs = false
 		}
 	}
 	return toEncrypt, encoding, message
