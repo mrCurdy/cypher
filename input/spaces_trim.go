@@ -9,7 +9,7 @@ func TrimSpaces(message string) string {
 	for message[0] == ' ' {
 		message = message[1:]
 	}
-	for message[len(message)] == ' ' {
+	for message[len(message)-1] == ' ' {
 		message = message[:len(message)-1]
 	}
 	res = message
