@@ -10,17 +10,18 @@ func Encrypt_reverse(s string) string {
 	return string(reversedRunes)
 
 }
-func ReverseAlphabet(ch rune) rune {
-	var reverse rune
-	if ch >= 'a' && ch <= 'z' {
-		reverse = 'z' - (ch - 'a')
-	} else if ch >= 'A' && ch <= 'Z' {
-		reverse = 'Z' - (ch - 'A')
-	} else {
-		return ch
-	}
 
-	return reverse
-}
+// func ReverseAlphabet(ch rune) rune {
+// 	var reverse rune
+// 	if ch >= 'a' && ch <= 'z' {
+// 		reverse = 'z' - (ch - 'a')
+// 	} else if ch >= 'A' && ch <= 'Z' {
+// 		reverse = 'Z' - (ch - 'A')
+// 	} else {
+// 		return ch
+// 	}
+
+// 	return reverse
+// }
 
 // func encrypt_reverse(s string) string {}
