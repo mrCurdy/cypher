@@ -1,18 +1,18 @@
 package rot13
 
 func Encrypt_rot13(s string) string {
-	// need to add filters for numbers, spaces, capitals ...
+
 	res := ""
 
 	for _, char := range s {
 
 		// checking if lowcase char
 		if char >= 'a' && char <= 'z' {
-			res += shiftBy5(char, 'z')
+			res += shiftBy13(char, 'z')
 
 			// checking if capcase char
 		} else if char >= 'A' && char <= 'Z' {
-			res += shiftBy5(char, 'Z')
+			res += shiftBy13(char, 'Z')
 
 			// all other symbols including numbers and spaces
 		} else {
@@ -25,9 +25,9 @@ func Encrypt_rot13(s string) string {
 }
 
 // function for shifting char position in alphabet
-func shiftBy5(char rune, end rune) string {
+func shiftBy13(char rune, end rune) string {
 
-	letter := int32(5) + char
+	letter := int32(13) + char
 	for letter > end {
 		letter -= 26
 	}
