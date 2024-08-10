@@ -1,12 +1,18 @@
 package reverse
 
-func Encrypt_reverse(s string) string {
-	reversedRunes := make([]rune, len(s))
+func Encrypt_reverse(message string) string {
+	res := ""
 
-	for i, r := range s {
-		reversedRunes[len(s)-1-i] = ReverseAlphabet(r)
+	for _, char := range message {
+		char = ReverseAlphabet(char)
+		res += string(char)
 	}
-
-	return string(reversedRunes)
-
+	return res
 }
+
+//function was replaced. Original worked with bugs
+// reversedRunes := make([]rune, len(s))
+
+// for i, r := range s {
+// 	reversedRunes[len(s)-1-i] = ReverseAlphabet(r)
+// }
