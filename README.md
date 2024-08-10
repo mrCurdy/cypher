@@ -2,6 +2,8 @@
 
 ## Description
 
+<!-- Add third encription -->
+
 This command-line tool allows users to encrypt and decrypt messages using various encryption techniques. The tool supports two types of encryption: ROT13 and Reverse Alphabet. It is designed to handle user inputs, ensuring that only valid inputs are processed. All non-alphabet characters are preserved in the message during encryption and decryption operations.
 
 ## Features
@@ -35,7 +37,8 @@ Run the code:
 Follow the on-screen promts:
 First you will be greeted by the tool. 
 
-//add inser number
+<!-- add insert number -->
+
 Select whether you want to encrypt or decrypt the message.
 Select between ROT13 or Reverse Alphabet encryption/decryption techniques.
 
@@ -46,7 +49,6 @@ Input the message you want to encrypt or decrypt.
 The tool will display the result of the operation.
 Example session:
 
-plaintext
 Copiar código
 Welcome to the Encryption CLI Tool!
 Please select an operation (encrypt/decrypt): encrypt
