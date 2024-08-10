@@ -17,17 +17,18 @@ func getInput() (toEncrypt bool, encoding string, message string) {
 		case 2:
 			toEncrypt = false
 		default:
-
+			fmt.Print("Select correct operation 1 or 2")
 			continue
 		}
 		fmt.Println("Select cypher (1/2):\n1. ROT13.\n2. Reverse.")
 		fmt.Scanln(&encoding)
 		fmt.Println()
-		if encoding != "1" || encoding != "2" {
+		if encoding == "1" || encoding == "2" {
+			fmt.Println("Enter the message:")
+			fmt.Scanln(&message)
+		} else {
 			continue
 		}
-		fmt.Println("Enter the message:")
-		fmt.Scanln(&message)
-		return toEncrypt, encoding, message
 	}
+	return toEncrypt, encoding, message
 }
