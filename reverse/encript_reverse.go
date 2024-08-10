@@ -1,6 +1,5 @@
 package reverse
 
-
 func Encrypt_reverse(s string) string {
 	reversedRunes := make([]rune, len(s))
 	
@@ -22,4 +21,4 @@ func reverseAlphabetValue(ch rune) rune {
 	}
 	
 	return reverse
-}
+// func encrypt_reverse(s string) string {}
