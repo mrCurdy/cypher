@@ -5,7 +5,7 @@ import "fmt"
 func TrimSpaces(message string) string {
 	res := ""
 	if len(message) == 0 || message == " " {
-		fmt.Println("Your message is empty. Try again. I'm trim")
+		fmt.Println("Your message is empty. I'm TrimSpaces")
 		return ""
 	}
 	for message[0] == ' ' {
