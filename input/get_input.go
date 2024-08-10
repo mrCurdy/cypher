@@ -8,11 +8,11 @@ func GetInput() (toEncrypt bool, encoding string, message string) {
 
 	falseInputs := true
 
-	fmt.Print("Welcome to the Cypher Tool!\n\nSelect operation (1/2):\n1. Encrypt.\n2. Decrypt.\n")
+	fmt.Print("Welcome to the Cypher Tool!\n\nSelect operation (1/2):\n")
 
 	for falseInputs {
 		var i int
-
+		fmt.Println("1. Encrypt.\n2. Decrypt.")
 		fmt.Scanln(&i)
 
 		switch i {
