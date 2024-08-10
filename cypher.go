@@ -10,7 +10,7 @@ import (
 
 func cypher() {
 
-	toEncrypt, encoding, message := input.GetInput()
+	toEncrypt, encoding, message := input.GetInputV2()
 
 	message = input.TrimSpaces(message)
 
@@ -18,7 +18,6 @@ func cypher() {
 
 		if encoding == "1" {
 			fmt.Println("Encrypted message using Rot13:")
-
 			fmt.Println(rot13.Encrypt_rot13(message))
 
 		} else if encoding == "2" {
