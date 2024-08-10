@@ -1,18 +1,36 @@
 package rot13
 
-// func decrypt_rot13(s string) string {}
+func Encrypt_rot13(s string) string {
+	// need to add filters for numbers, spaces, capitals ...
+	res := ""
 
-//function for inspiration.
-//Has to be modified to process strings, changing every character
+	for _, char := range s {
 
-// in this case step will be predifined
+		// checking if lowcase char
+		if char >= 'a' && char <= 'z' {
+			res += shiftBy5(char, 'z')
 
-// func ShiftBy(r rune, step int) rune {
+			// checking if capcase char
+		} else if char >= 'A' && char <= 'Z' {
+			res += shiftBy5(char, 'Z')
 
-// 	letter := int32(step) + r
-// 	for letter > 'z' {
-// 		letter -= 26
-// 	}
+			// all other symbols including numbers and spaces
+		} else {
+			res += string(char)
+			continue
+		}
+	}
 
-// 	return letter
-// }
+	return res
+}
+
+// function for shifting char position in alphabet
+func shiftBy5(char rune, end rune) string {
+
+	letter := int32(5) + char
+	for letter > end {
+		letter -= 26
+	}
+
+	return string(letter)
+}
