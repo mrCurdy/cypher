@@ -1,12 +1,13 @@
 package reverse
 
-func Decrypt_reverse(s string) string {
-	reversedRunes := make([]rune, len(s))
+func Decrypt_reverse(message string) string {
+	res := ""
 
-	for i, r := range s {
-		reversedRunes[len(s)-1-i] = ReverseAlphabet(r)
+	for _, char := range message {
+		char = ReverseAlphabet(char)
+		res += string(char)
 	}
-
-	return string(reversedRunes)
-
+	return res
 }
+
+//Totally copy encript function
