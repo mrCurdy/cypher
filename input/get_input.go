@@ -40,11 +40,12 @@ func GetInput() (toEncrypt bool, encoding string, message string) {
 
 				fmt.Println(entMessageSign)
 				message = Scanner()
+				if len(message) == 0 || message == " " {
+					fmt.Println(wrongMessageSign)
+					continue
+				}
 				fmt.Println()
 
-			} else if len(message) == 0 || message == " " {
-				fmt.Println(wrongMessageSign)
-				continue
 			} else {
 				fmt.Println(wrongChoiceSign)
 				continue
