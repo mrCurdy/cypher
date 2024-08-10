@@ -15,7 +15,7 @@ func GetInputV2() (toEncrypt bool, encoding string, message string) {
 	welcomeSign := "Welcome to the Cypher Tool!"
 	encDecMenu := "\nSelect operation (1/2):\n1. Encrypt.\n2. Decrypt."
 	wrongChoiceSign := "\nWrong selection. Please try again."
-	cypherSelectMenu := "\nSelect cypher (1/3):\n1. ROT13.\n2. Reverse.\n3. Reverse message and shift"
+	cypherSelectMenu := "\nSelect cypher (1/3):\n1. ROT13.\n2. Reverse.\n3. Reverse and shift"
 	entMessageSign := "\nEnter the message:"
 	wrongMessageSign := "\nMessage is empty. Try again"
 

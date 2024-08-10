@@ -4,13 +4,13 @@
 
 <!-- Add third encription -->
 
-This command-line tool allows users to encrypt and decrypt messages using various encryption techniques. The tool supports two types of encryption: ROT13 and Reverse Alphabet. It is designed to handle user inputs, ensuring that only valid inputs are processed. All non-alphabet characters are preserved in the message during encryption and decryption operations.
+This command-line tool allows users to encrypt and decrypt messages using various encryption techniques. The tool supports three types of encryption: ROT13, Reverse and Reverse and shift. It is designed to handle user inputs, ensuring that only valid inputs are processed. All non-alphabet characters are preserved in the message during encryption and decryption operations.
 
 ## Features
 
 Greet the user: The tool welcomes the user upon start.
 Select Operation: The user can choose to either encrypt or decrypt a message.
-Select Encryption Type: The user can choose between ROT13 and Reverse Alphabet types of encryption.
+Select Encryption Type: The user can choose between ROT13, Reverse and Reverse and shift types of encryption.
 Input Message: The user inputs the message that is going to be encrypted or decrypted.
 Output Result: The tool outputs the encrypted or decrypted message.
 Input Validation: The tool continuously prompts the user for valid input until it receives it. Leading and trailing whitespaces are removed before validation.
@@ -37,26 +37,31 @@ Run the code:
 Follow the on-screen promts:
 First you will be greeted by the tool. 
 
-<!-- add insert number -->
+Select whether you want to encrypt or decrypt the message, by entering the number 1 or 2 accordingly.
 
-Select whether you want to encrypt or decrypt the message.
-Select between ROT13 or Reverse Alphabet encryption/decryption techniques.
+Select between ROT13, Reverse and Reverse and shift encryption/decryption techniques, by entering the number 1, 2 or 3 accordingly.
 
+Enter the message you want to encrypt or decrypt.
 
-
-Choose the encryption technique: ROT13 or Reverse Alphabet.
-Input the message you want to encrypt or decrypt.
 The tool will display the result of the operation.
+
+## Example
 Example session:
 
-Copiar código
-Welcome to the Encryption CLI Tool!
-Please select an operation (encrypt/decrypt): encrypt
-Please select the encryption type (rot13/reverse): rot13
-Please enter the message: Hello World!
-Encrypted message: Uryyb Jbeyq!
+Welcome to the Encryption Cypher Tool!
 
-Encryption Techniques
-What does the tool do?
-Tool usage with examples.
-Explanation of the cyphers used. ...
+Select operation (1/2):
+1. Encrypt.
+2. Decrypt.
+2
+Select cypher (1/3):
+1. ROT13
+2. Reverse
+3. Reverse and shift
+3
+Please enter the message: 
+viubW/qbbx
+Decrypted message using Reverse and shift: 
+kood/Johvi
+
+Thank you for your time!

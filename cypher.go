@@ -17,16 +17,16 @@ func cypher() {
 	if toEncrypt {
 
 		if encoding == "1" {
-			fmt.Println("Encrypted message using Rot13:")
+			fmt.Println("\nEncrypted message using Rot13:")
 			fmt.Println(rot13.Encrypt_rot13(message))
 
 		} else if encoding == "2" {
 
-			fmt.Println("Encrypted message using Reverse:")
+			fmt.Println("\nEncrypted message using Reverse:")
 			fmt.Println(reverse.Encrypt_reverse(message))
 		} else {
 
-			fmt.Println("Encrypted message using Third custom Cypher:")
+			fmt.Println("\nEncrypted message using Third custom Cypher:")
 			fmt.Println(thirdcypher.Encrypt_thirdcypher(message))
 		}
 
@@ -34,17 +34,17 @@ func cypher() {
 
 		if encoding == "1" {
 
-			fmt.Println("Decrypted message using Rot13:")
+			fmt.Println("\nDecrypted message using Rot13:")
 			fmt.Println(rot13.Decrypt_rot13(message))
 
 		} else if encoding == "2" {
 
-			fmt.Println("Decrypted message using Reverse:")
+			fmt.Println("\nDecrypted message using Reverse:")
 			fmt.Println(reverse.Decrypt_reverse(message))
 
 		} else {
 
-			fmt.Println("Decrypted message using Third custom Cypher:")
+			fmt.Println("\nDecrypted message using Reverse and shift:")
 			fmt.Println(thirdcypher.Decrypt_thirdcypher(message))
 		}
 
