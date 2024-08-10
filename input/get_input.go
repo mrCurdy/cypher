@@ -8,9 +8,11 @@ func GetInput() (toEncrypt bool, encoding string, message string) {
 
 	falseInputs := true
 
+	fmt.Print("Welcome to the Cypher Tool!\n\nSelect operation (1/2):\n1. Encrypt.\n2. Decrypt.\n")
+
 	for falseInputs {
 		var i int
-		fmt.Print("Welcome to the Cypher Tool!\n\nSelect operation (1/2):\n1. Encrypt.\n2. Decrypt.\n")
+
 		fmt.Scanln(&i)
 
 		switch i {
@@ -19,7 +21,7 @@ func GetInput() (toEncrypt bool, encoding string, message string) {
 		case 2:
 			toEncrypt = false
 		default:
-			fmt.Print("\nSelect correct operation 1 or 2")
+			fmt.Print("\nSelect correct operation 1 or 2\n")
 			continue
 		}
 
@@ -29,7 +31,7 @@ func GetInput() (toEncrypt bool, encoding string, message string) {
 		if encoding == "1" || encoding == "2" || encoding == "3" {
 
 			fmt.Println("\nEnter the message:")
-			fmt.Scan(&message)
+			message = Scanner()
 			fmt.Println()
 			falseInputs = false
 
