@@ -27,7 +27,7 @@ func Encrypt_rot13(s string) string {
 // function for shifting char position in alphabet
 func shiftBy5(char rune, end rune) string {
 
-	letter := int32(5) + char
+	letter := int32(13) + char
 	for letter > end {
 		letter -= 26
 	}
