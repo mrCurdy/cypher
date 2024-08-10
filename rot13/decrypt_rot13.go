@@ -27,7 +27,7 @@ func Decrypt_rot13(s string) string {
 // function for shifting char position in alphabet
 func shiftBackBy13(char rune, end rune) string {
 
-	letter := int32(13) - char
+	letter := char - int32(13)
 	for letter < end {
 		letter += 26
 	}
