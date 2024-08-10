@@ -55,4 +55,4 @@ Encrypted message: Uryyb Jbeyq!
 Encryption Techniques
 What does the tool do?
 Tool usage with examples.
-Explanation of the cyphers used.
+Explanation of the cyphers used. ...
