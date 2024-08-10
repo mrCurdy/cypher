@@ -8,13 +8,13 @@ func GetInput() (toEncrypt bool, encoding string, message string) {
 
 	falseInputs := true
 
-	welcomeSign := "Welcome to the Cypher Tool!\n"
+	welcomeSign := "Welcome to the Cypher Tool!"
 	encDecMenu := "\nSelect operation (1/2):\n1. Encrypt.\n2. Decrypt."
-	wrongChoiceSign := "\nWrong selection. Please try again.\n"
+	wrongChoiceSign := "\nWrong selection. Please try again."
 	cypherSelectMenu := "\nSelect cypher (1/3):\n1. ROT13.\n2. Reverse.\n3. Reverse message and shift"
-	entMessageSign := "\nEnter the message:"
+	entMessageSign := "Enter the message:"
 
-	fmt.Print(welcomeSign)
+	fmt.Println(welcomeSign)
 
 	for falseInputs {
 		var i int
@@ -27,7 +27,7 @@ func GetInput() (toEncrypt bool, encoding string, message string) {
 		case 2:
 			toEncrypt = false
 		default:
-			fmt.Print(wrongChoiceSign)
+			fmt.Println(wrongChoiceSign)
 			continue
 		}
 
