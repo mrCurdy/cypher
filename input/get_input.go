@@ -43,10 +43,10 @@ func GetInput() (toEncrypt bool, encoding string, message string) {
 				fmt.Println()
 
 			} else if len(message) == 0 || message == " " {
-				fmt.Println(welcomeSign)
+				fmt.Println(wrongMessageSign)
 				continue
 			} else {
-				fmt.Println(wrongMessageSign)
+				fmt.Println(wrongChoiceSign)
 				continue
 			}
 			falseInputs = false
