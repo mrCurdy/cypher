@@ -60,13 +60,21 @@ Select operation (1/2):
 2
 
 Select cypher (1/3):
+
 1 ROT13
+
 2 Reverse
+
 3 Reverse and shift
+
 3
+
 Please enter the message: 
+
 viubW/qbbx
+
 Decrypted message using Reverse and shift: 
+
 kood/Johvi
 
 Thank you for your time!
