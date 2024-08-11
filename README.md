@@ -68,10 +68,10 @@ Select cypher (1/3):
 3. Reverse and shift
 3
 
-Please enter the message:\n 
+Please enter the message:  
 viubW/qbbx
 
-Decrypted message using Reverse and shift:\n
+Decrypted message using Reverse and shift:  
 kood/Johvi
 
 Thank you for your time!
