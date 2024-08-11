@@ -1,10 +1,10 @@
 package main
 
 import (
-	"cypher/input"
-	"cypher/reverse"
-	"cypher/rot13"
-	"cypher/thirdcypher"
+	"cyphertool/input"
+	"cyphertool/reverse"
+	"cyphertool/rot13"
+	"cyphertool/thirdcypher"
 	"fmt"
 )
 

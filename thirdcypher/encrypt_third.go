@@ -1,7 +1,7 @@
 package thirdcypher
 
 import (
-	"cypher/rot13"
+	"cyphertool/rot13"
 )
 
 func Encrypt_thirdcypher(s string) string {
