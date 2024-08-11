@@ -31,6 +31,13 @@ Example:
 Input: Hello World!
 Output: Svool Dliow!
 
+Reverse and shift: This technique reverses the string of characters and then shifts it by 13 places.
+
+Example:
+
+Input: Hello World!
+Output: !qyebJ byyrU
+
 ## Usage
 
 Run the code:
@@ -54,13 +61,16 @@ Select operation (1/2):
 1. Encrypt.
 2. Decrypt.
 2
+
 Select cypher (1/3):
 1. ROT13
 2. Reverse
 3. Reverse and shift
 3
+
 Please enter the message: 
 viubW/qbbx
+
 Decrypted message using Reverse and shift: 
 kood/Johvi
 
