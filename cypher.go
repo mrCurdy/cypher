@@ -10,7 +10,7 @@ import (
 
 func cypher() {
 
-	toEncrypt, encoding, message := input.GetInputV2()
+	toEncrypt, encoding, message := input.GetInput()
 
 	message = input.TrimSpaces(message)
 
