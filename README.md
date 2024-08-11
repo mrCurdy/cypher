@@ -33,7 +33,7 @@ Output: Svool Dliow!
 
 ## Usage
 
-Run the code:
+Run the tool:
 Follow the on-screen promts:
 First you will be greeted by the tool. 
 
@@ -47,6 +47,7 @@ The tool will display the result of the operation.
 
 ## Example
 Example session:
+$ ./cyphertool
 
 Welcome to the Encryption Cypher Tool!
 
