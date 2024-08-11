@@ -59,13 +59,13 @@ Welcome to the Encryption Cypher Tool!
 
 Select operation (1/2):
 1. Encrypt.
-2. Decrypt.
+2. Decrypt.  
 2
 
 Select cypher (1/3):
 1. ROT13
 2. Reverse
-3. Reverse and shift
+3. Reverse and shift  
 3
 
 Please enter the message:  
