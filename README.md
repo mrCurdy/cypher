@@ -31,6 +31,13 @@ Example:
 Input: Hello World!
 Output: Svool Dliow!
 
+Reverse and shift: This technique reverses the string of characters and then shifts it by 13 places.
+
+Example:
+
+Input: Hello World!
+Output: !qyebJ byyrU
+
 ## Usage
 
 Run the tool:
