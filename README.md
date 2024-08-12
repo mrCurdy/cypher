@@ -40,7 +40,7 @@ Output: !qyebJ byyrU
 
 ## Usage
 
-Run the code:
+Run the tool:
 Follow the on-screen promts:
 First you will be greeted by the tool. 
 
@@ -54,24 +54,34 @@ The tool will display the result of the operation.
 
 ## Example
 Example session:
+$ ./cyphertool
 
 Welcome to the Encryption Cypher Tool!
 
 Select operation (1/2):
-1. Encrypt.
-2. Decrypt.  
+
+1 Encrypt.
+
+2 Decrypt.
+
 2
 
 Select cypher (1/3):
-1. ROT13
-2. Reverse
-3. Reverse and shift  
+
+1 ROT13
+
+2 Reverse
+
+3 Reverse and shift
+
 3
 
-Please enter the message:  
+Please enter the message: 
+
 viubW/qbbx
 
-Decrypted message using Reverse and shift:  
+Decrypted message using Reverse and shift: 
+
 kood/Johvi
 
 Thank you for your time!

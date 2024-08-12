@@ -9,8 +9,8 @@ func GetInput() (toEncrypt bool, encoding string, message string) {
 	enteringMessage := true
 	enteringFirstInput := true
 	enteringSecondInput := true
-	var firstInput int
-	var secondInput int
+	firstInput := ""
+	secondInput := ""
 
 	welcomeSign := "Welcome to the Cypher Tool!"
 	encDecMenu := "\nSelect operation (1/2):\n1. Encrypt.\n2. Decrypt."
@@ -24,12 +24,12 @@ func GetInput() (toEncrypt bool, encoding string, message string) {
 	for enteringFirstInput {
 
 		fmt.Println(encDecMenu)
-		fmt.Scanln(&firstInput)
+		firstInput = Scanner()
 
 		switch firstInput {
-		case 1:
+		case "1":
 			toEncrypt = true
-		case 2:
+		case "2":
 			toEncrypt = false
 		default:
 			fmt.Println(wrongChoiceSign)
@@ -41,14 +41,14 @@ func GetInput() (toEncrypt bool, encoding string, message string) {
 	for enteringSecondInput {
 
 		fmt.Println(cypherSelectMenu)
-		fmt.Scanln(&secondInput)
+		secondInput = Scanner()
 
 		switch secondInput {
-		case 1:
+		case "1":
 			encoding = "1"
-		case 2:
+		case "2":
 			encoding = "2"
-		case 3:
+		case "3":
 			encoding = "3"
 		default:
 			fmt.Println(wrongChoiceSign)
