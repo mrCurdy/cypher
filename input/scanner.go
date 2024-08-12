@@ -6,7 +6,9 @@ import (
 )
 
 func Scanner() string {
+	input := ""
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
-	return scanner.Text()
+	input = TrimSpaces(scanner.Text())
+	return input
 }
